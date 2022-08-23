@@ -4,19 +4,13 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import { Link } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import React, { useState } from 'react';
 import Button from 'react-bootstrap/Button';
-import Offcanvas from 'react-bootstrap/Offcanvas';
 import Form from 'react-bootstrap/Form';
-import FloatingLabel from 'react-bootstrap/FloatingLabel'
 import './App.css';
 
 
 function Login() {
-    const [show, setShow] = useState(false);
-
-  const handleClose = () => setShow(false);
-  const handleShow = () => setShow(true);
+ 
   return (
     <div className="Login">
 <Navbar className="Navbar" style={{ backgroundColor: '#4B4B4B' , }}>
@@ -24,18 +18,21 @@ function Login() {
          
           <Nav className="me-auto">
             <Link to="/"  style={{ color:'#ddd', paddingLeft: 13, textDecoration: 'none' }}>Home</Link>
-            <Link to="/Login"  style={{ color:'#ddd', paddingLeft: 13, textDecoration: 'none' }}>Sign up</Link>
-            <Link to="/Login" style={{ color:'#ddd', paddingLeft: 13, textDecoration: 'none' }}>Log in</Link>
+             <Link to="/news" style={{ color:'#ddd', paddingLeft: 13, textDecoration: 'none' }}>News</Link>
+             <Link to="/Login"  style={{ color:'#ddd', paddingLeft: 13, textDecoration: 'none' }}>Log in</Link>
+
           </Nav>
         </Container>
   </Navbar>
-
+   <header className="App-header-login">
+      <h1 className="h1-login">Sign in and Sign up</h1>
+      </header>
 
   
 
      <br />
-     
-     <div className="login-form">
+   
+     <div className="login-form m-5">
           <br />
       <Form.Floating className="mb-3">
         <Form.Control

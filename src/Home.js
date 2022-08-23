@@ -23,8 +23,8 @@ axios.get("https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY").then(resp => s
  
           <Nav className="me-auto">
             <Link to="/"  style={{ color:'#ddd', paddingLeft: 13, textDecoration: 'none' }}>Home</Link>
-            <Link to="/Login"  style={{ color:'#ddd', paddingLeft: 13, textDecoration: 'none' }}>Sign up</Link>
-            <Link to="/Login" style={{ color:'#ddd', paddingLeft: 13, textDecoration: 'none' }}>Log in</Link>
+            <Link to="/news" style={{ color:'#ddd', paddingLeft: 13, textDecoration: 'none' }}>News</Link>
+            <Link to="/Login"  style={{ color:'#ddd', paddingLeft: 13, textDecoration: 'none' }}>Log in</Link>
 
           </Nav>
         </Container>
@@ -36,7 +36,7 @@ axios.get("https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY").then(resp => s
       <br />
       {!data && <p>Please wait ..</p>}
       <p> {data && <p>Data</p> && data.date}</p>
-    <img src={data && data.url } className="img" />
+    <img src={ data && data.url } className="img" />
      {[
     
         'success',

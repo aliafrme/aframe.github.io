@@ -4,7 +4,7 @@
  
 
 .App-header {
-  background: linear-gradient(-40deg,#9a326b 0,#42668a 100%);
+  background: linear-gradient(90deg,#48a4f7,#bc42ab);
   display: flex;
 
   font-size: calc(10px + 2vmin);
@@ -40,9 +40,27 @@ width: 100%;
 height: 450px;
 }
 .login-form{
-position: fixed;
+  position: fixed;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   width: 80%;
   z-index: 1;
-  margin-left: 5%;
+
+  height: 50vh;
 }
+.App-header-login {
+  background: linear-gradient(90deg,#3ceb91,#00b8b0 50%,#9416ff);
+   display: flex;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+.h1-login{
+text-align: center;
+}
+
+.App-header-News {
+  background: linear-gradient(90deg,#fc701e,#f21e80,#7718aa);
+  text-align: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+

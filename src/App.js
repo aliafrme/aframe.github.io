@@ -1,11 +1,10 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Container from 'react-bootstrap/Container';
-import { Routes, Route, Link } from "react-router-dom";
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
+import { Routes, Route } from "react-router-dom";
 import Login from './Login'
 import Home from "./Home";
+import News from "./News"
+
 
 function App() {
   return (
@@ -13,6 +12,7 @@ function App() {
        <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />
+          <Route path="/news" element={<News />} />
       </Routes>
     </div>
 
